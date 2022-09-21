@@ -1,5 +1,7 @@
 # ignored files for the samples directory
-
+/classes
+/readings
+/samples
 # This is created by Mac OSX Finder
 .DS_Store
 
