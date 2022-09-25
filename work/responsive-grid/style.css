@@ -101,6 +101,7 @@ html, body {
     grid-template-columns: repeat(12, 1fr);
     background-color: hsl(106, 16%, 32%);
     margin-top: 1rem;
+    font-size: 0.75rem;
 }
 .footer__link {
     grid-column: span 12;
