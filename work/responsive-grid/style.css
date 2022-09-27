@@ -55,10 +55,14 @@ html, body {
    
 }
 .main__heading {
+    display: flex;
     grid-column: span 12;
+    width: 100%;
+    justify-content: center;
     justify-self: center;
     font-family: 'Courier New', Courier, monospace;
     color:whitesmoke;
+    background-color: #5a7a51;
 }
 .card {
     grid-column: span 6;
@@ -80,11 +84,14 @@ html, body {
     aspect-ratio: 1/1;
     width: 80%;
     border-radius: 1rem;
-    margin-top: 1.25rem;
 }
 .card__heading {
     margin: 1rem;
     color:#ffefd5c7;
+}
+.card__text {
+    padding: 1rem;
+    color: white;
 }
 .card__cta {
     padding: 1rem;
