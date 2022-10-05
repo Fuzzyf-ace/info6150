@@ -1,0 +1,109 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.root {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    justify-self: center;
+}
+
+.header__h1 {
+    font-family: serif;
+}
+
+.main {
+    justify-self: center;
+}
+.form {
+    border: 1px solid black;
+}
+.form__name {
+    margin: 0.5rem;
+    width: 100%;
+}
+.form__email {
+    margin: 0.5rem;
+}
+.form__annoyCheck {
+    padding: 0.5rem;
+}
+.form__select {
+    margin: 0.5rem;
+}
+.form__button {
+    padding: 0.5rem;
+}
+
+.footer {
+   padding:0.5rem;
+}
+.footer__link {
+    color: black;
+}
+
+@media screen and (min-width: 1000px) {
+    html, body {
+        font-size: large;
+    }
+    .root {
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas: 
+        "header main"
+        "none footer";
+    }
+    .header {
+        grid-area: header;
+        align-self: center;
+        justify-self: end;
+
+    }
+    .main {
+        grid-area: main;
+        align-self: center;
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "name email"
+        "annoy annoy"
+        "select select"
+        "button button";
+    }
+    .form__name {
+        grid-area: name;
+    }
+    .form__email {
+        grid-area: email;
+    }
+    .form__annoyCheck {
+        grid-area: annoy;
+    }
+    .form__select {
+        grid-area: select;
+        
+    }
+    .form__button {
+        grid-area: button;
+        justify-self: end;
+    }
+
+    .footer {
+        grid-area: footer;
+        justify-self: center;
+    }    
+    
+}

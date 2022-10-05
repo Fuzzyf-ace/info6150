@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="root">
+        <header class="header">
+            <h1 class="header__h1">Sign Up</h1>
+        </header>
+        <main class="main">
+            <form method="post" action="/submit" class="form">
+                <div class="form__name">
+                    <label for="name">Name: </label>
+                    <input name="name" type="text" id="name" placeholder="(required)" required>
+                </div>
+                <div class="form__email">
+                    <label for="email">Email: </label>
+                    <input name="email" type="email" id="email" placeholder="(required)" required>
+                </div>
+                <div class="form__annoyCheck">
+                    <input name="annoy_me" type="checkbox" checked>
+                    <label for="">Do you want us to send you annoying emails?</label>
+                </div>
+                <select name="tier" id="select" class="form__select" required>
+                    <option value="" selected>Please Select</option>
+                    <option value="1" class="form__select--silver">Silver Tier</option>
+                    <option value="2" class="form__select--gold">Gold Tier</option>
+                    <option value="3" class="form__select--platium">Platinum Tier</option>
+                </select>
+                <div class="form__button">
+                    <button type="submit">Register</button>
+                </div>  
+            </form>
+        </main>
+        <footer class="footer">
+            <a class="footer__link" href="#">privacy policy</a>
+        </footer>
+    </div>
+</body>
+</html>
