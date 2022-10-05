@@ -15,19 +15,19 @@
         <main class="main">
             <form method="post" action="/submit" class="form">
                 <div class="form__name">
-                    <label for="name">Name: </label>
+                    <label for="name">Name:</label>
                     <input name="name" type="text" id="name" placeholder="(required)" required>
                 </div>
                 <div class="form__email">
-                    <label for="email">Email: </label>
+                    <label for="email">Email:</label>
                     <input name="email" type="email" id="email" placeholder="(required)" required>
                 </div>
                 <div class="form__annoyCheck">
-                    <input name="annoy_me" type="checkbox" checked>
-                    <label for="">Do you want us to send you annoying emails?</label>
+                    <input name="annoy_me" type="checkbox" id="annoy_me" checked>
+                    <label for="annoy_me">Do you want us to send you annoying emails?</label>
                 </div>
                 <select name="tier" id="select" class="form__select" required>
-                    <option value="" selected>Please Select</option>
+                    <option value="" selected>--Please Select--</option>
                     <option value="1" class="form__select--silver">Silver Tier</option>
                     <option value="2" class="form__select--gold">Gold Tier</option>
                     <option value="3" class="form__select--platium">Platinum Tier</option>

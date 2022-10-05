@@ -15,7 +15,6 @@ html, body {
 .header {
     justify-self: center;
 }
-
 .header__h1 {
     font-family: serif;
 }
@@ -23,24 +22,33 @@ html, body {
 .main {
     justify-self: center;
 }
+
 .form {
+    display: grid;
+    flex-direction: column;
     border: 1px solid black;
 }
 .form__name {
     margin: 0.5rem;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 3rem auto;
 }
 .form__email {
     margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 3rem auto;
 }
 .form__annoyCheck {
     padding: 0.5rem;
 }
 .form__select {
     margin: 0.5rem;
+    text-align: center;
+    width: auto;
 }
 .form__button {
     padding: 0.5rem;
+    justify-self: end;
 }
 
 .footer {
@@ -54,6 +62,7 @@ html, body {
     html, body {
         font-size: large;
     }
+
     .root {
         display: grid;
         grid-template-columns: 30% 1fr;
@@ -62,12 +71,14 @@ html, body {
         "header main"
         "none footer";
     }
+
     .header {
         grid-area: header;
         align-self: center;
         justify-self: end;
 
     }
+
     .main {
         grid-area: main;
         align-self: center;
@@ -98,7 +109,6 @@ html, body {
     }
     .form__button {
         grid-area: button;
-        justify-self: end;
     }
 
     .footer {
