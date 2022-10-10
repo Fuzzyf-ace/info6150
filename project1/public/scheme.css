@@ -1,0 +1,122 @@
+/* below CSS adapted from https://css.gg under the MIT License */
+@import url('https://css.gg/menu.css');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.root {
+    width: 100%;
+
+    --header-color: #80CED7;
+    --main--color:#c0f5e8b8;
+    --menu-color:#c9edf6;
+    --footer-color:#80CED7;
+}
+
+.header {
+    background-color: var(--header-color);
+    display: grid;
+}
+.heading__logo {
+    display: block;
+    aspect-ratio: 1/1;
+    width: 50px;
+}
+.header__heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+}
+
+.heading__text {
+    margin: 0.5rem;
+}
+.header__menuicon {
+    background-color: #aad1c577;
+}
+.header__menu {
+    list-style: none;
+    padding: 0.1rem;
+    margin: 0;
+    width: min-content;
+    position: relative;
+    left: 2rem;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.header__menu:hover {
+    background-color: var(--menu-color);
+}
+.nav__list a{
+    color: black;
+    padding: 1rem;
+}
+.gg-menu {
+    margin: 1rem;
+    align-self: center;
+}
+.menu {
+    position: relative;
+}
+
+.header__menu:hover .menu__navigation{
+    max-height:none;
+    animation-duration: 3s;
+}
+.header__menu:focus-within .menu__navigation {
+    max-height: none;
+}
+.menu__navigation {
+    position:absolute;
+    top: 1.2rem;
+    left: -1px;
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    list-style: none;
+    background-color: var(--menu-color);
+}
+
+.nav__list {
+    padding: 0.25rem;
+    justify-self: center;
+}
+.main {
+    background-color: var(--main--color);
+}
+.footer {
+    background-color: var(--footer-color);
+}
+.footer__privacy {
+    color: black;
+    padding-left: 1rem;
+}
+/* pc */
+@media screen and (min-width:1000px) {
+    .menu__navigation {
+        top: -1.1rem;
+        left: 3rem;
+        flex-direction: row;
+        max-height: none;
+        max-width: 0;
+        padding-top: 0.35rem;
+        padding-bottom: 0.35rem;
+    }
+    .header__menu:hover .menu__navigation{
+        max-width:none;
+        animation-duration: 3s;
+    }
+    .header__menu:focus-within .menu__navigation {
+        max-width: none;
+    }
+}

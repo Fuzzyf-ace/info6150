@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="scheme.css">
+</head>
+<body>
+    <div class="root">
+        <header class="header">
+            <div class="header__heading">
+                <a href="index.html">
+                    <img class="heading__logo" href="index.html" src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80" alt="">
+                </a>
+                <h1 class="heading__text">Homepage</h1>
+            </div>
+            <div class="header__menuicon">
+                <ul class="header__menu">
+                    <li class="menu">
+                        <a href="" class="menu__button">
+                            <i class="gg-menu"></i>
+                        </a>
+                        <ul class="menu__navigation">
+                            <li class="nav__list"><a href="index.html">Homepage</a></li>
+                            <li class="nav__list"><a href="about.html">About</a></li>
+                            <li class="nav__list"><a href="register.html">Register</a></li>
+                        </ul>
+                    </li>
+                </ul> 
+            </div>
+        </header>
+        <main class="main">
+            <form class="form" action="../register" method="post">
+                <div class="form__name">
+                    <label for="name">Name:</label>
+                    <input name="name" type="text" id="name" required placeholder="required">
+                </div>
+                <div class="form__email">
+                    <label for="email">Email:</label>
+                    <input name="email" type="email" id="email" required placeholder="required"> 
+                </div>
+                <div class="form__dropdown">
+                    <label for="select">Where do you know our website from?</label>
+                    <select name="email_frequence" id="select">
+                        <option value="" selected>please select</option>
+                        <option value="1">Google</option>
+                        <option value="2">Friends</option>
+                        <option value="3">Exibition</option>
+                    </select>  
+                </div>
+                <div class="form__checkbox">
+                    <input name="receive_email" type="checkbox" id="checkbox" required checked>
+                    <label for="checkbox">I am glad to receive perissodactyla pictures by email.</label>
+                </div>
+                <div class="form__button">
+                    <button type="submit">Register</button>
+                </div>
+    
+                
+            </form>
+            
+        </main>
+        <footer class="footer">
+            <a href="#" class="footer__privacy">Privacy Policy</a>
+        </footer>
+    </div>
+    
+    
+</body>
+</html>
