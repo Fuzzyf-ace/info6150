@@ -55,9 +55,12 @@ html, body {
 .header__menu:hover {
     background-color: var(--menu-color);
 }
-.nav__list a{
+.header__menu:focus-within {
+    background-color: var(--menu-color);
+}
+.nav__list a {
     color: black;
-    padding: 1rem;
+    margin: 0.5rem;
 }
 .gg-menu {
     margin: 1rem;
@@ -67,13 +70,6 @@ html, body {
     position: relative;
 }
 
-.header__menu:hover .menu__navigation{
-    max-height:none;
-    animation-duration: 3s;
-}
-.header__menu:focus-within .menu__navigation {
-    max-height: none;
-}
 .menu__navigation {
     position:absolute;
     top: 1.2rem;
@@ -85,6 +81,17 @@ html, body {
     padding: 0;
     list-style: none;
     background-color: var(--menu-color);
+}
+.header__menu:hover .menu__navigation{
+    max-height:10rem;
+    transition-property: max-height;
+    transition-duration: 0.5s;
+    /* transition-delay: 0s; */
+}
+.header__menu:focus-within .menu__navigation {
+    max-height:10rem;
+    transition-property: max-height;
+    transition-duration: 0.5s;
 }
 
 .nav__list {
@@ -103,9 +110,12 @@ html, body {
 }
 /* pc */
 @media screen and (min-width:1000px) {
+    .nav__list a {
+        margin: 1rem;
+    }
     .menu__navigation {
         top: -1.1rem;
-        left: 3rem;
+        left: 3.3rem;
         flex-direction: row;
         max-height: none;
         max-width: 0;
@@ -113,10 +123,12 @@ html, body {
         padding-bottom: 0.35rem;
     }
     .header__menu:hover .menu__navigation{
-        max-width:none;
-        animation-duration: 3s;
+        max-width:20rem;
+        max-height:none;
+        transition-property: max-width;
     }
     .header__menu:focus-within .menu__navigation {
-        max-width: none;
+        max-width:25rem;
+        transition-property: max-width;
     }
 }

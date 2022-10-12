@@ -30,6 +30,15 @@
     margin: 1rem;
     background-color: var(--card-color);
 }
+.card--1 {
+    background-color: rgb(215, 236, 253);
+}
+.card--2 {
+    background-color: rgb(208, 247, 215);
+}
+.card--3 {
+    background-color: rgb(202, 251, 251);
+}
 .card__heading {
     align-self: center;
 }
