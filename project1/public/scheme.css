@@ -88,6 +88,7 @@ html, body {
     transition-duration: 0.5s;
     /* transition-delay: 0s; */
 }
+
 .header__menu:focus-within .menu__navigation {
     max-height:10rem;
     transition-property: max-height;
@@ -107,6 +108,11 @@ html, body {
 .footer__privacy {
     color: black;
     padding-left: 1rem;
+}
+@media (prefers-reduced-motion) {
+    * {
+        transition: none !important;
+    }
 }
 /* pc */
 @media screen and (min-width:1000px) {
