@@ -1,0 +1,146 @@
+/* below CSS adapted from https://css.gg under the MIT License */
+@import url('https://css.gg/menu.css');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.root {
+    width: 100%;
+
+    --header-color: #80CED7;
+    --main--color:#c0f5e8b8;
+    --menu-color:#c9edf6;
+    --footer-color:#80CED7;
+}
+
+.header {
+    background-color: var(--header-color);
+    display: grid;
+}
+.heading__logo {
+    display: block;
+    aspect-ratio: 1/1;
+    width: 50px;
+}
+.header__heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+}
+
+.heading__text {
+    margin: 0.5rem;
+}
+.header__menuicon {
+    background-color: #aad1c577;
+}
+.header__menu {
+    list-style: none;
+    padding: 0.1rem;
+    margin: 0;
+    width: min-content;
+    position: relative;
+    left: 2rem;
+    cursor: pointer;
+}
+
+.nav__list a {
+    color: black;
+    margin: 0.5rem;
+}
+
+.gg-menu {
+    margin: 1rem;
+    align-self: center;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__button {
+    cursor: pointer;
+}
+
+.menu__navigation {
+    
+    position:absolute;
+    max-height: 0;
+    top: 42px;
+    transition-property: max-height;
+    transition-duration: 0.5s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0;
+    list-style: none;
+    background-color: var(--menu-color);
+}
+
+.menu__navigation--open {
+
+    max-height:10rem;
+
+}
+
+.nav__list {
+    padding: 0.25rem;
+    justify-self: center;
+}
+
+.main {
+    background-color: var(--main--color);
+}
+
+.footer {
+    background-color: var(--footer-color);
+}
+
+.footer__privacy {
+    color: black;
+    padding-left: 1rem;
+}
+
+@media (prefers-reduced-motion) {
+    * {
+        transition: none !important;
+    }
+}
+
+/* pc */
+@media screen and (min-width:1000px) {
+    .menu {
+        flex-direction: row;
+    }
+    .nav__list {
+        align-self: center;
+    }
+    .nav__list a {
+        margin: 1rem;
+    }
+
+
+    .menu__navigation{
+        transition-property: max-width;
+        height: 40px;
+        top: 0px;
+        left: 70px;
+        flex-direction: row;
+        max-width: 0;
+        max-height: none;
+    }
+    .menu__navigation--open {
+        max-width:20rem;
+    }
+
+}
