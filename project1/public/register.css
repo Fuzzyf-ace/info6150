@@ -1,0 +1,50 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+.root {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "main" "footer";
+    height: 100%;
+}
+.header {
+    grid-area: header;
+}
+.main {
+    display: grid;
+    grid-area: main;
+    align-self: center;
+    height: inherit;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-self: center;
+    justify-content: center;
+}
+.form__name {
+    display: flex;
+    flex-direction: column;
+}
+.form__email {
+    display: flex;
+    flex-direction: column;
+}
+.form__dropdown {
+    display: flex;
+    flex-direction: column;
+}
+.form__button {
+    align-self: flex-end;
+}
+
+.footer {
+    grid-area: footer;
+}
