@@ -1,0 +1,59 @@
+.root {
+    --card-color:#CCDBDC; 
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "main" "footer";
+    height: 100%;
+}
+
+.main {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.25rem;
+}
+
+.main__heading {
+    grid-column: span 12;
+    background-color: rgb(187, 243, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 6;
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--card-color);
+}
+.card--1 {
+    background-color: rgb(215, 236, 253);
+}
+.card--2 {
+    background-color: rgb(208, 247, 215);
+}
+.card--3 {
+    background-color: rgb(202, 251, 251);
+}
+.card__heading {
+    align-self: center;
+}
+.card__about {
+    font-size: small;
+    color: black;
+}
+
+@media screen and (min-width:1000px) {
+    .card {
+        grid-column: span 4;
+    }
+}
+
+
+
