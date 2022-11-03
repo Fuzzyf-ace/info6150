@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="root">
+    <form action="/register" method="post" class="register">
+        <div>All fields with * are required</div>
+        <div class="register__name name">
+            <label for="name" class="name__label">Name* :</label>
+            <span class="name__error">Name is required!</span>
+            <input name="name" id="name" type="text" class="name__input">
+        </div>
+        <div class="register__email email">
+            <label for="email" class="email__label">Email* :</label>
+            <span class="email__error"></span>
+            <input type="text" id="email" name="email" class="email__input">
+        </div>
+        <div class="register__email-confirm email-confirm">
+            <label for="email-confirm" class="email-confirm__label">Confirm Email* :</label>
+            <span class="email-confirm__error"></span>
+            <input type="text" id="email-confirm" name="email-confirm" class="email-confirm__input">
+        </div>
+        <div class="register__wants-spam wants-spam">
+            <input type="checkbox" name="wants-spam" class="wants-spam__input">
+            <label for="wants-spam" class="wants-spam__label">Do you want to receive our emails?</label>
+        </div>
+        <div class="register__tier tier">
+            <label for="tier" class="tier__label">Tier</label>
+            <select name="tier" id="" class="tier__select">
+                <option value="">---Please select---</option>
+                <option value="1" class="tier__select--silver">Silver</option>
+                <option value="2" class="tier__select--gold">Gold</option>
+                <option value="3" class="tier__select--platinum">Platinum</option>
+            </select>
+        </div>
+        <button type="submit" class="register__submit">Register</button>
+    </form>
+</div>
+    
+</body>
+</html>
