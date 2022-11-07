@@ -1,0 +1,50 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+
+
+.register {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+.name,
+ .email,
+.email-confirm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.name__input--witherror,
+.email__input--witherror,
+.email-confirm__input--witherror {
+    border-color: red;
+    border-style: dotted;
+}
+
+.name__error {
+    display: none;
+}
+.email__error, .email-confirm__error {
+    background-color: red;
+}
+
+.name__error--active {
+    display: initial; 
+    background-color: red;
+}
+
+ @media screen and (min-width:1000px) {
+
+    .name,
+    .email,
+   .email-confirm {
+       flex-direction: row;
+   }
+
+} 
