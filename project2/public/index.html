@@ -14,10 +14,17 @@
         <header class="header">
             <div class="header__heading heading">
                 <a href="index.html" class="heading__icon icon"><img src="http://placekitten.com/200/200/?image=14" alt="cat_icon" class="icon__img"></a>
-                <div>           
-                    <a href="maincontent" class="heading__skiplink">Skip to Content</a>
+                <div>    
+                    <a href="#maincontent" class="heading__skiplink" aria-label="Click here to skip to main content">Skip to Content</a>
                     <h1 class="heading__text">Cats Power the Internet</h1>
-                    <button class="menu__button"><i class="gg-menu"></i></button>
+                    <div class="hamburgermenu">
+                        <button class="hamburgermenu__button" aria-label="Open menu"><i class="gg-menu"></i></button>
+                        <ul class="hamburgermenu__menu">
+                            <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="cats.html" class="menu__link">Famous Cats</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Cat Events</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <ul class="header__menu">
@@ -26,28 +33,35 @@
                 <li class="menu__item"><a href="" class="menu__link">Cat Events</a></li>
             </ul>
         </header>
-        <main class="main" id="main">
-            <div class="main__card card">
-                <h2 class="card__heading">Long time Internet Subjects</h2>
-                <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum tempora cum suscipit iste. Voluptates, mollitia odit voluptate dolore quas provident reprehenderit laudantium doloribus veritatis facilis fugiat voluptatem quidem dolorum autem?</p>
-                <p class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quibusdam sint libero quos facere, voluptas eveniet similique odio nemo expedita!</p>
-                <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda voluptas rerum unde consequatur ipsam fugit voluptate numquam rem, harum dolore.</p>
+        <main class="main" id="maincontent">
+            <div class="main__card card-1 card">
+                <img src="http://placekitten.com/200/200/?image=9" alt="a cat leaning on a wooden door" class="card__img-1">
+                <div class="card-1__text">
+                    <h2 class="card__heading">Long time Internet Subjects</h2>
+                    <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum tempora cum suscipit iste. Voluptates, mollitia odit voluptate dolore quas provident reprehenderit laudantium doloribus veritatis facilis fugiat voluptatem quidem dolorum autem?</p>
+                    <p class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quibusdam sint libero quos facere, voluptas eveniet similique odio nemo expedita!</p>
+                    <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda voluptas rerum unde consequatur ipsam fugit voluptate numquam rem, harum dolore.</p>
+                </div>
+                
             </div>
-            <div class="main__card card">
-                <h2 class="card__heading">Long time Internet Kings</h2>
-                <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum tempora cum suscipit iste. Voluptates, mollitia odit voluptate dolore quas provident reprehenderit laudantium doloribus veritatis facilis fugiat voluptatem quidem dolorum autem?</p>
-                <p class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quibusdam sint libero quos facere, voluptas eveniet similique odio nemo expedita!</p>
-                <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda voluptas rerum unde consequatur ipsam fugit voluptate numquam rem, harum dolore.</p>
+            <div class="main__card card-2 card">
+                <img src="http://placekitten.com/200/200/?image=7" alt="a cat leaning on a wooden door" class="card__img-2">
+                <div class="card-2__text">    
+                    <h2 class="card__heading">Long time Internet Kings</h2>
+                    <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum tempora cum suscipit iste. Voluptates, mollitia odit voluptate dolore quas provident reprehenderit laudantium doloribus veritatis facilis fugiat voluptatem quidem dolorum autem?</p>
+                    <p class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quibusdam sint libero quos facere, voluptas eveniet similique odio nemo expedita!</p>
+                    <p class="card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda voluptas rerum unde consequatur ipsam fugit voluptate numquam rem, harum dolore.</p>
+                </div>
             </div>
     
     
         </main>
         <footer class="footer">
             <ul class="footer__menu">
-                <li class="menu__item"><a href="#" class="menu__link">Privacy Policy</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Work for Us</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Social Media</a></li>
+                <li class="menu__item" ><a href="#" class="menu__link">Privacy Policy</a></li>
+                <li class="menu__item" ><a href="#" class="menu__link">Work for Us</a></li>
+                <li class="menu__item" ><a href="#" class="menu__link">Contact us</a></li>
+                <li class="menu__item" ><a href="#" class="menu__link">Social Media</a></li>
             </ul>
         </footer>
     </div>

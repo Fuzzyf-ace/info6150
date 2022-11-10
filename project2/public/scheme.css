@@ -48,13 +48,51 @@ html, body {
     top:-30px;
 }
 
-.menu__button {
+.heading__skiplink:focus {
+    top:10px;
+}
+
+
+
+.hamburgermenu__button, .hamburgermenu{
     align-self: center;
-    height: 50px;
     padding: 1rem;
     border: none;
     background-color: burlywood;
 }
+.hamburgermenu {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.hamburgermenu__menu {
+    position: absolute;
+    width:max-content; 
+    max-height: 0px;
+
+    overflow: hidden;
+    right: 0;
+    background-color: burlywood;
+    margin: 0;
+
+    max-height: 0px;
+    transition-property: max-height;
+    transition-duration: 0.5s;
+
+}
+
+.hamburgermenu__menu--open {
+    display: block;
+    max-height: 110px;
+    transition-property: max-height;
+    transition-duration: 0.5s;
+}
+
+.hamburgermenu__menu--close {
+    display: none;
+}
+
+
 .icon {
 
 }
@@ -62,12 +100,14 @@ html, body {
     width: 100px;
 }
 
+
+
 .heading__text {
     justify-self: center;
     align-self: center;
 }
 
-.header__menu, .footer__menu {
+.header__menu, .footer__menu, .hamburgermenu__menu {
     list-style: none;
     padding: 0;
 }
@@ -77,21 +117,22 @@ html, body {
 }
 
 .header__menu {
-    position: absolute;
-    right: 0;
-    top: 10%;
-
-    background-color: burlywood;
-    margin: 0;
     display: none;
 }
 
-.header__menu--open {
-    display: block;
+.header__menu>.menu__item, .hamburgermenu__menu>.menu__item {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
-
-.header__menu>.menu__item {
+.header__menu>.menu__item>.menu__link,
+ .hamburgermenu__menu>.menu__item>.menu__link {
     padding: 0.5rem;
+}
+.header__menu>.menu__item>.menu__link:hover,
+.hamburgermenu__menu>.menu__item>.menu__link:hover,
+.footer__menu>.menu__item>.menu__link:hover {
+    background-color: blue;
+    color: white;
 }
 
 .footer__menu {
@@ -114,7 +155,17 @@ html, body {
     grid-area: footer;
 }
 
+
+@media (prefers-reduced-motion) {
+    * {
+        transition: none !important;
+    }
+}
 @media screen and (min-width: 44rem) {
+
+    .hamburgermenu {
+        display: none;
+    }
     .header__menu, .footer__menu {
         position: inherit;
         display: flex;
@@ -126,8 +177,12 @@ html, body {
         padding: 2rem;
     }
 
-    .menu__button {
+    /* .menu__button {
         display: none;
+    } */
+
+    .footer__menu>.menu__item>.menu__link {
+        padding: 0.5rem;
     }
 
 }
