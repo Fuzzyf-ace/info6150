@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cats.css">
+    <link rel="stylesheet" href="scheme.css">
+    <script defer src="scheme.js"></script>
+    <script defer src="cats.js"></script>
+    <title>Cats</title>
+</head>
+<body>
+    <div class="root">
+        <header class="header">
+            <div class="header__heading heading">
+                <a href="index.html" class="heading__icon icon"><img src="http://placekitten.com/200/200/?image=14" alt="cat_icon" class="icon__img"></a>
+                <div>
+                    <a href="#maincontent" class="heading__skiplink">Skip to Content</a>
+                    <h1 class="heading__text">Famous Internet Cats</h1>
+                    <div class="hamburgermenu">
+                        <button class="hamburgermenu__button"><i class="gg-menu"></i></button>
+                        <ul class="hamburgermenu__menu">
+                            <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                            <li class="menu__item"><a href="cats.html" class="menu__link">Famous Cats</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Cat Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="header__menu">
+                <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                <li class="menu__item"><a href="cats.html" class="menu__link">Famous Cats</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Cat Events</a></li>
+            </ul>
+        </header>
+        <main class="main" id="maincontent">
+            <div class="card">
+                <h3 class="card__heading">Jorts</h3>
+                <img src="http://placekitten.com/200/200/?image=4" alt="a cat leaning on a wooden door" class="card__img">
+                <div class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate nostrum nisi <a href="#" class="card__cta">Subscribe</a> dicta ut illum et neque autem fugit deserunt cupiditate?</div>
+            </div>
+            <div class="card">
+                <h3 class="card__heading">Jean</h3>
+                <img src="http://placekitten.com/200/200/?image=5" alt="a cat leaning on a wooden door" class="card__img">
+                <div class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate nostrum nisi <a href="#" class="card__cta">Subscribe</a> dicta ut illum et neque autem fugit deserunt cupiditate?</div>
+            </div>
+            <div class="card">
+                <h3 class="card__heading">Maru</h3>
+                <img src="http://placekitten.com/200/200/?image=6" alt="a cat leaning on a wooden door" class="card__img">
+                <div class="card__text">Lorem ipsum, dolor sit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, labore. amet consectetur adipisicing elit. Voluptate nostrum nisi <a href="#" class="card__cta">Subscribe</a> dicta ut illum et neque autem fugit deserunt cupiditate?</div>
+            </div>
+            <div class="card">
+                <h3 class="card__heading">Nyancat</h3>
+                <img src="http://placekitten.com/200/200/?image=7" alt="a cat leaning on a wooden door" class="card__img">
+                <div class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate nostrum nisi <a href="#" class="card__cta">Subscribe</a> dicta ut illum et neque autem fugit deserunt cupiditate?</div>
+            </div>
+            <div class="card">
+                <h3 class="card__heading">Grumpy Cat</h3>
+                <img src="http://placekitten.com/200/200/?image=8" alt="a cat leaning on a wooden door" class="card__img">
+                <div class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate nostrum nisi <a href="#" class="card__cta">Subscribe</a> dicta ut illum et neque autem fugit deserunt cupiditate?</div>
+            </div>
+            <div class="card">
+                <h3 class="card__heading">Lil Bub</h3>
+                <img src="http://placekitten.com/200/200/?image=9" alt="a cat leaning on a wooden door" class="card__img">
+                <div class="card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate nostrum nisi <a href="#" class="card__cta">Subscribe</a> dicta ut illum et neque autem fugit deserunt cupiditate?</div>
+            </div>
+        </main>
+        <footer class="footer">
+            <ul class="footer__menu">
+                <li class="menu__item"><a href="" class="menu__link">Privacy Policy</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Work for Us</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Contact us</a></li>
+                <li class="menu__item"><a href="" class="menu__link">Social Media</a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- <dialog class="modal">
+        
+    </dialog> -->
+   <dialog class="subscribe">
+        <form action="/register" method="post" class="register">
+            <h3 class="register__heading">Subscribe to the Latest Mews!</h3>
+            <div class="register__email email">
+                <label for="email" class="email__label">Email: *required</label>
+                <input type="text" id="email" name="email" class="email__input">
+                <span class="email__error"></span>
+            </div>
+            <div class="register__email-confirm email-confirm">
+                <label for="email-confirm" class="email-confirm__label">Confirm Email: *required</label>
+                <input type="text" id="email-confirm" name="email-confirm" class="email-confirm__input">
+                <span class="email-confirm__error"></span>
+            </div>
+            <div class="buttons">
+                <button class="buttons__subscribe" type="submit">Subscribe</button>
+                <button class="buttons__cancel close" type="button">Cancel</button>
+            </div> 
+        </form>
+    </dialog>
+
+</body>
+</html>
