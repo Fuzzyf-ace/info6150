@@ -1,0 +1,33 @@
+.panel__img {
+    float: left;
+    padding: 0.5rem;
+    aspect-ratio: 1/1;
+    width: 125px;
+}
+.panel__text {
+    margin: 0;
+    padding: 0.5rem;
+}
+.panel{
+    border: 1px solid black;
+    background-color: #eeeeee;
+}
+
+@media screen and (min-width: 44rem) {
+    
+    .panel {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "img text";
+    }
+
+    .panel__img {
+        width: 200px;
+        grid-area: img;
+    }
+
+    .panel__text {
+        grid-area: text;
+    }
+}

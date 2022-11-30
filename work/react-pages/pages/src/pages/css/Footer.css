@@ -1,0 +1,33 @@
+.footer {
+    grid-area: footer;
+    background-color: #80CED7;
+}
+.footer__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 0.5rem;
+}
+.footer__menu>.menu__item {
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+@media screen and (min-width: 44rem) {
+
+    .footer__menu {
+        position: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer__menu>.menu__item {
+        padding: 1rem;
+    }
+
+    .footer__menu>.menu__item>.menu__link {
+        padding: 0.5rem;
+    }
+
+}
