@@ -1,6 +1,6 @@
 .main {
     grid-area: main;
-    background-color: #c0f5e8b8;
+    background-color: #c0f5e8;
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-areas: "nav" "content";
@@ -16,11 +16,19 @@
     justify-content: space-around;
     margin: 0;
     padding-left: 0;
+    background-color: #80CED7;
 }
 
 .nav--ul>li {
     list-style: none;
+    width: 6rem;
     padding: 1rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+
+}
+.nav--li1__active, .nav--li2__active, .nav--li3__active {
+    background-color: #c0f5e8;
 }
 
 @media screen and (max-width: 44rem)  {

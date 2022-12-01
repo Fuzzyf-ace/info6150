@@ -11,7 +11,7 @@ function Main () {
     return (
         <main className="main">
             <NavBar setPage={setPage}/>
-            { (page === `Introduction`) && <Introduction/>}
+            { (page === `Introduction`) && <Introduction setPage={setPage}/>}
             { (page === `Cards`) && <Cards/>}
             { (page === `Panel`) && <Panel/>}
         </main>
