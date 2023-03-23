@@ -122,7 +122,7 @@ Your web app MUST demonstrate these accessibility features
 
 You must implement at least 5 of these features following the practices from class:
 
-- Drop down navigation menu
+- Drop down navigation menu 
 - A "hamburger menu"
 - Accordions or Tabs 
 - Theme selection (switching between a light or a dark theme) that then applies to all "pages" in the SPA
